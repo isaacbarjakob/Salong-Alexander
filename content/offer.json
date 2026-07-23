@@ -1,0 +1,9 @@
+{
+  "visible": false,
+  "kicker": "AKTUELLT HOS OSS",
+  "title": "Aktuellt erbjudande",
+  "text": "Här kan ni publicera ett erbjudande, en nyhet eller information till kunderna.",
+  "image": "/assets/salong-fasad.jpeg",
+  "button_text": "Boka erbjudandet",
+  "button_link": "https://www.bokadirekt.se/places/salong-alexander-43090"
+}

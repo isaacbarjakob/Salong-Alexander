@@ -1,0 +1,15 @@
+{
+  "hero": {
+    "kicker": "FRISÖR I STOCKHOLM CITY",
+    "title": "Din stil.<br><i>Vårt hantverk.</i>",
+    "text": "Personlig hårvård, kreativitet och över 20 års erfarenhet – mitt i hjärtat av Stockholm."
+  },
+  "about": {
+    "title": "Erfarenhet möter<br><i>nytänkande.</i>",
+    "text_1": "Hos Salong Alexander står hantverk, kvalitet och personligt bemötande i centrum. Vi hjälper dig hitta en frisyr som känns rätt för både din stil och din vardag.",
+    "text_2": "Välkommen till en salong där kunskap, känsla och kreativitet möts."
+  },
+  "careers": {
+    "text": "Är du frisör och intresserad av att arbeta hos oss? Skicka gärna en intresseanmälan."
+  }
+}

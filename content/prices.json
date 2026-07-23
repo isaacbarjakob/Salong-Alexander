@@ -1,0 +1,69 @@
+{
+  "intro": "Samtliga priser är frånpriser och kan variera beroende på hårlängd, hårmängd och önskat resultat.",
+  "categories": [
+    {
+      "title": "Klippning",
+      "items": [
+        {
+          "name": "Klippning",
+          "price": "från 550 kr"
+        },
+        {
+          "name": "Barn 0–10 år",
+          "price": "från 470 kr"
+        }
+      ]
+    },
+    {
+      "title": "Färg & slingor",
+      "items": [
+        {
+          "name": "Färgning",
+          "price": "från 990 kr"
+        },
+        {
+          "name": "Folieslingor",
+          "price": "från 1 390 kr"
+        },
+        {
+          "name": "Toning",
+          "price": "från 990 kr"
+        },
+        {
+          "name": "Slingor med hätta",
+          "price": "från 990 kr"
+        }
+      ]
+    },
+    {
+      "title": "Hårvård",
+      "items": [
+        {
+          "name": "Keratinbehandling",
+          "price": "från 2 800 kr"
+        },
+        {
+          "name": "Olaplex",
+          "price": "från 320 kr"
+        },
+        {
+          "name": "K18",
+          "price": "400 kr"
+        }
+      ]
+    },
+    {
+      "title": "Styling & övrigt",
+      "items": [
+        {
+          "name": "Tvätt & fön",
+          "price": "från 390 kr"
+        },
+        {
+          "name": "Hair extensions",
+          "price": "från 4 500 kr"
+        }
+      ]
+    }
+  ]
+}

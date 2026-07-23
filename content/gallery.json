@@ -1,0 +1,40 @@
+{
+  "images": [
+    {
+      "image": "/assets/salong-extra-01.jpg",
+      "alt": "Salong Alexander interiör"
+    },
+    {
+      "image": "/assets/salong-extra-02.jpg",
+      "alt": "Tvättplatser på Salong Alexander"
+    },
+    {
+      "image": "/assets/salong-extra-03.jpg",
+      "alt": "Klippstationer på Salong Alexander"
+    },
+    {
+      "image": "/assets/salong-extra-04.jpg",
+      "alt": "Salong Alexanders fasad"
+    },
+    {
+      "image": "/assets/salong-extra-05.jpg",
+      "alt": "Reception på Salong Alexander"
+    },
+    {
+      "image": "/assets/salong-extra-06.jpg",
+      "alt": "Salong Alexander interiör"
+    },
+    {
+      "image": "/assets/salong-extra-07.jpg",
+      "alt": "Salong Alexanders fasad"
+    },
+    {
+      "image": "/assets/salong-extra-08.jpg",
+      "alt": "Översikt av Salong Alexander"
+    },
+    {
+      "image": "/assets/salong-extra-09.jpg",
+      "alt": "Klippstationer på Salong Alexander"
+    }
+  ]
+}

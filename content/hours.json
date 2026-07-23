@@ -1,0 +1,18 @@
+{
+  "days": [
+    {
+      "label": "Måndag–Fredag",
+      "time": "10.00–19.00"
+    },
+    {
+      "label": "Lördag",
+      "time": "10.00–16.00"
+    },
+    {
+      "label": "Söndag",
+      "time": "Stängt"
+    }
+  ],
+  "notice_visible": false,
+  "notice": ""
+}

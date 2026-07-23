@@ -1,0 +1,101 @@
+backend:
+  name: github
+  repo: isaacbarjakob/Salong-Alexander
+  branch: main
+  base_url: https://BYT-TILL-DIN-DECAP-PROXY.workers.dev
+  auth_endpoint: /auth
+
+locale: sv
+media_folder: assets/uploads
+public_folder: /assets/uploads
+publish_mode: simple
+
+collections:
+  - name: webbplats
+    label: Webbplats
+    files:
+      - name: texter
+        label: Texter
+        file: content/site.json
+        format: json
+        fields:
+          - label: Startsida
+            name: hero
+            widget: object
+            fields:
+              - {label: Överrubrik, name: kicker, widget: string}
+              - {label: Huvudrubrik, name: title, widget: string, hint: "HTML-radbrytning kan användas, exempelvis <br>."}
+              - {label: Introduktion, name: text, widget: text}
+          - label: Om salongen
+            name: about
+            widget: object
+            fields:
+              - {label: Rubrik, name: title, widget: string}
+              - {label: Första texten, name: text_1, widget: text}
+              - {label: Andra texten, name: text_2, widget: text}
+          - label: Jobba hos oss
+            name: careers
+            widget: object
+            fields:
+              - {label: Text, name: text, widget: text}
+
+      - name: oppettider
+        label: Öppettider
+        file: content/hours.json
+        format: json
+        fields:
+          - label: Ordinarie öppettider
+            name: days
+            widget: list
+            summary: "{{fields.label}} – {{fields.time}}"
+            fields:
+              - {label: Dag eller period, name: label, widget: string}
+              - {label: Tid, name: time, widget: string}
+          - {label: Visa avvikande information, name: notice_visible, widget: boolean, default: false}
+          - {label: Avvikande öppettider eller information, name: notice, widget: text, required: false}
+
+      - name: priser
+        label: Priser och behandlingar
+        file: content/prices.json
+        format: json
+        fields:
+          - {label: Information ovanför priserna, name: intro, widget: text}
+          - label: Kategorier
+            name: categories
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - {label: Kategorinamn, name: title, widget: string}
+              - label: Behandlingar
+                name: items
+                widget: list
+                summary: "{{fields.name}} – {{fields.price}}"
+                fields:
+                  - {label: Behandling, name: name, widget: string}
+                  - {label: Pris, name: price, widget: string}
+
+      - name: galleri
+        label: Bildspel
+        file: content/gallery.json
+        format: json
+        fields:
+          - label: Bilder
+            name: images
+            widget: list
+            summary: "{{fields.alt}}"
+            fields:
+              - {label: Bild, name: image, widget: image}
+              - {label: Bildbeskrivning, name: alt, widget: string}
+
+      - name: erbjudande
+        label: Erbjudande eller nyhet
+        file: content/offer.json
+        format: json
+        fields:
+          - {label: Visa på hemsidan, name: visible, widget: boolean, default: false}
+          - {label: Överrubrik, name: kicker, widget: string}
+          - {label: Rubrik, name: title, widget: string}
+          - {label: Text, name: text, widget: text}
+          - {label: Bild, name: image, widget: image}
+          - {label: Knapptext, name: button_text, widget: string}
+          - {label: Knapplänk, name: button_link, widget: string}
