@@ -45,39 +45,4 @@ if (resultSlider) {
   restart();
 }
 
-
-
-let salonGalleryCleanup = null;
-const initSalonGallery = () => {
-  salonGalleryCleanup?.();
-  const slider = document.querySelector(".salon-slider");
-  if (!slider) return;
-  const slides = [...slider.querySelectorAll(".salon-slide")];
-  const counter = slider.querySelector(".salon-counter b");
-  const prev = slider.querySelector(".salon-prev");
-  const next = slider.querySelector(".salon-next");
-  if (!slides.length) return;
-  let current = 0;
-  let timer;
-  const show = index => {
-    current = (index + slides.length) % slides.length;
-    slides.forEach((slide, i) => slide.classList.toggle("active", i === current));
-    if (counter) counter.textContent = String(current + 1).padStart(2, "0");
-  };
-  const restart = () => {
-    clearInterval(timer);
-    timer = setInterval(() => show(current + 1), 5500);
-  };
-  const prevHandler = () => { show(current - 1); restart(); };
-  const nextHandler = () => { show(current + 1); restart(); };
-  prev?.addEventListener("click", prevHandler);
-  next?.addEventListener("click", nextHandler);
-  restart();
-  salonGalleryCleanup = () => {
-    clearInterval(timer);
-    prev?.removeEventListener("click", prevHandler);
-    next?.removeEventListener("click", nextHandler);
-  };
-};
-document.addEventListener("salon-gallery-ready", initSalonGallery);
-setTimeout(initSalonGallery, 900);
+const salonSlider=document.querySelector(".salon-slider");if(salonSlider){const slides=[...salonSlider.querySelectorAll(".salon-slide")];const counter=salonSlider.querySelector(".salon-counter b");let current=0;const show=i=>{current=(i+slides.length)%slides.length;slides.forEach((s,n)=>s.classList.toggle("active",n===current));counter.textContent=String(current+1).padStart(2,"0")};salonSlider.querySelector(".salon-prev").addEventListener("click",()=>show(current-1));salonSlider.querySelector(".salon-next").addEventListener("click",()=>show(current+1));}

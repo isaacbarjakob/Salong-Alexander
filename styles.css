@@ -439,23 +439,3 @@
   font:600 clamp(2rem,4vw,4rem)/1.05 "Playfair Display",serif;
 }
 .careers .btn,.careers-mail{cursor:pointer}
-
-/* Adminstyrt innehåll */
-.admin-offer{
-  display:grid;
-  grid-template-columns:minmax(0,1.05fr) minmax(320px,.95fr);
-  gap:clamp(2rem,5vw,6rem);
-  align-items:center;
-  background:#111;
-  color:#fff;
-}
-.admin-offer[hidden]{display:none!important}
-.offer-media img{width:100%;height:min(650px,70vh);object-fit:cover}
-.offer-copy h2{font:600 clamp(2.8rem,6vw,6rem)/.95 "Playfair Display",serif;margin:.6rem 0 1.3rem}
-.offer-copy>p:not(.eyebrow){color:#bbb;line-height:1.8;max-width:620px}
-.offer-copy .btn{margin-top:1.4rem}
-.hours-notice{padding:1rem 1.2rem;border:1px solid rgba(255,255,255,.2);margin:1rem 0;color:#fff}
-@media(max-width:800px){
-  .admin-offer{grid-template-columns:1fr}
-  .offer-media img{height:440px}
-}
