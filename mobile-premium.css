@@ -1,0 +1,78 @@
+@media (max-width:760px){
+  body{background:#0d0d0d;color:#fff;padding-bottom:64px}
+  .site-header{height:86px;background:#0d0d0d;border-bottom:1px solid #272727;padding:0 20px}
+  .brand img{width:62px;height:62px;border-radius:50%}
+  .nav{top:86px}
+
+  .hero{min-height:790px;padding:122px 22px 34px;display:block;background:#0d0d0d}
+  .hero-bg{background-image:url('assets/efter.jpeg');background-position:68% 35%;background-size:cover;opacity:.9}
+  .hero-overlay{background:linear-gradient(90deg,rgba(8,8,8,.96) 0%,rgba(8,8,8,.79) 47%,rgba(8,8,8,.22) 76%),linear-gradient(0deg,rgba(8,8,8,.95) 0%,rgba(8,8,8,0) 40%)}
+  .hero-inner{margin-top:0;max-width:72%;position:relative;z-index:3}
+  .hero .eyebrow{font-size:.72rem;letter-spacing:.12em;color:#fff}
+  .hero h1{font-size:clamp(3.2rem,14vw,5.3rem);line-height:.9;margin:.7rem 0 1.4rem}
+  .hero p{font-size:1rem;line-height:1.7;color:#e0e0e0}
+  .hero-actions{gap:.8rem;flex-direction:row;align-items:center;flex-wrap:wrap;margin-top:1.3rem}
+  .hero-actions .btn{padding:.95rem 1.05rem}
+  .hero-actions .ghost-link{border:1px solid rgba(255,255,255,.7);padding:.9rem 1rem;text-decoration:none}
+  .hero-proof{position:absolute;left:22px;right:auto;bottom:116px;margin:0;padding:0;background:none;backdrop-filter:none;display:flex;gap:.7rem;align-items:center}
+  .hero-proof strong{font-size:1rem;font-family:Manrope,Arial,sans-serif}
+  .hero-proof div{display:flex;align-items:center;gap:.5rem}
+  .hero-proof p{font-size:.78rem;margin:0;color:#ddd}
+  .hero-proof span{font-size:1rem}
+
+  .trust-strip{margin:0 22px 22px;border:1px solid #333;border-radius:10px;overflow:hidden;background:#171717;grid-template-columns:repeat(2,1fr)}
+  .trust-strip div{padding:1.05rem;border-right:1px solid #333;border-bottom:1px solid #333;text-align:center}
+  .trust-strip strong{font-size:1.45rem;color:#f39a3a}
+  .trust-strip span{font-size:.64rem;letter-spacing:.08em;color:#bbb}
+
+  .salon-gallery{padding:28px 22px 46px;background:#0d0d0d;color:#fff}
+  .salon-gallery .section-tag,.salon-gallery .section-head{display:none}
+  .salon-slider{background:transparent;overflow:visible}
+  .salon-track{height:auto!important;display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px;scrollbar-width:none}
+  .salon-track::-webkit-scrollbar{display:none}
+  .salon-slide{position:relative!important;inset:auto!important;opacity:1!important;pointer-events:auto!important;flex:0 0 30%;height:150px!important;margin:0;scroll-snap-align:start}
+  .salon-slide img{height:150px!important;width:100%;object-fit:cover;border-radius:8px}
+  .salon-prev,.salon-next,.salon-counter{display:none}
+
+  .prices,.team,.real-reviews{background:#0d0d0d}
+  .section{padding:52px 22px}
+  .section-tag{margin-bottom:1rem;font-size:.62rem}
+  .section-head{margin-bottom:1.8rem}
+  .section h2{font-size:clamp(2.6rem,12vw,4.3rem);line-height:.94}
+  .section-head p:last-child{font-size:.95rem}
+
+  .price-grid{grid-template-columns:1fr 1fr;gap:10px;background:transparent;border:0}
+  .price-card{border:1px solid #333;border-radius:10px;padding:1.2rem;background:#171717}
+  .price-card h3{font-size:1.35rem;margin:.55rem 0 1rem}
+  .price-card>a{display:block;padding:.75rem 0;border-top:1px solid #333}
+  .price-card b,.price-card em{display:block;font-size:.8rem;white-space:normal}
+  .price-card em{color:#ff7b3a;margin-top:.2rem}
+  .price-cta{border-radius:10px;margin-top:12px;padding:1.25rem;gap:1rem}
+  .price-cta h3{font-size:1.8rem}
+
+  .team-grid{grid-template-columns:1fr 1fr;gap:10px;background:transparent;border:0}
+  .team-card{border:1px solid #333;border-radius:10px;overflow:hidden}
+  .team-photo{aspect-ratio:1/1.05}
+  .team-copy{padding:1rem}
+  .team-copy h3{font-size:1.35rem;margin:.5rem 0 .8rem}
+  .team-copy p{font-size:.8rem;line-height:1.5}
+
+  .result-track,.result-slide img{height:460px!important;min-height:460px!important}
+  .result-slider{border-radius:10px}
+  .result-slide figcaption{padding:4rem 1.2rem 1.2rem;display:block}
+  .result-slide figcaption strong{display:block;text-align:left;font-size:1.8rem;margin-top:.4rem}
+
+  .compact-why{grid-template-columns:1fr 1fr!important;gap:10px!important;background:transparent!important;border:0!important}
+  .compact-why article{min-height:150px!important;border:1px solid #333;border-radius:10px;background:#171717!important;padding:1.1rem!important}
+  .compact-why article strong{font-size:1.15rem!important;color:#fff}
+  .compact-why article p{font-size:.76rem!important;color:#aaa}
+  .review-cards{grid-template-columns:1fr;gap:10px;background:transparent;border:0}
+  .review-cards article{min-height:auto;border:1px solid #333;border-radius:10px;padding:1.4rem}
+  .review-cards blockquote{font-size:1.6rem;margin:1rem 0}
+  .google-review-grid{grid-template-columns:1fr!important}
+
+  .site-footer{padding-top:2.5rem}
+  .footer-main{gap:1.8rem}
+  .footer-map iframe{height:280px}
+  .mobile-book{height:64px;font-size:.9rem;letter-spacing:.14em}
+}
